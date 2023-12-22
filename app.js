@@ -83,6 +83,12 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
+    else if(message.includes('open Spotify')) {
+        window.open("https://open.spotify.com/", "_blank");
+        const finalText = "Opening Spotify";
+        speech.text = finalText;
+    }
+
     else if(message.includes('open youtube')) {
         window.open("https://www.youtube.com/", "_blank");
         const finalText = "Opening Youtube";
